@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Entrega</title>
+	<meta charset="UTF-8" />
+	<meta name="keywords" content="tus palabras clave, aqui" />
+	<meta name="description" content="breve descripcion del sitio" />
+	<meta name="author" content="autor del documento" />
+	<meta http-equiv="refresh" content="30" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="icon" type="image/jpg" href="../../multimedia/fotos/scan.jpg">
+</head>
+<body>
+	<header>
+		<p>
+			<img src="../../multimedia/fotos/scan.jpg" alt="Logotipo"/>
+		</p>
+		<nav>
+			<ul id="menu">
+				<li>
+					<a href="../../index.html" title="Inicio">Inicio</a>
+				</li>
+				<li>
+					<a href="../quienesSomos/quienesSomos.html" title="Quienes Somos">Quienes Somos</a>
+				</li>
+				<li>
+					<a href="../catalogo/catalogo.html" title="Nuestros Productos">Nuestros Productos</a>
+				</li>
+				<li>
+					<a href="../contacto/contacto.html" title="Contacto">Contacto</a>
+				</li>
+				<li>
+					<a href="../comprar/cuenta.html" title="Comprar">Comprar</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<article>
+			<header>
+				<h1>Validar compra</h1>
+			</header>
+			<section>
+				<h2>Formul&aacute;rio compra</h2>
+				<form action="compraCompletada.html" method="post">
+					<section>
+						<h3>Formas de entrega</h3>
+						<p>Seleccione una opci&oacute;n de env&iacute;o</p>
+						<input type="radio" name="entrega" value="casa" id="casa" checked><label for="casa"> Env&iacute;o a domic&iacute;lio</label><br>
+						<input type="radio" name="entrega" value="tienda" id="tienda"><label for="tienda"> Recogida en tienda</label>
+					</section>
+				<hr>
+					<section>
+						<h3>Carrito</h3>
+						<label for="producto">Selecciona un producto</label><br>
+						<select name="producto" id="producto">
+							<option value="articulo1">Monitor AOC</option>
+							<option value="articulo2">Apple iMac</option>
+							<option value="articulo3">Ideapad Lenovo</option>
+							<option value="articulo4">MI TVI A4</option>
+						</select><br>
+						<label for="cantidad">Seleccione Unidades:</label><br>
+						<input type="text" value="" id="cantidad">
+					</section>
+				<hr>
+					<section>
+						<h3>M&eacute;todo de Pago</h3>
+						<table id="pago">
+							<tr>
+								<td colspan="4">
+									<label for="numeroTarjeta">N&uacute;mero de tarjeta:</label><br>
+									<input type="text" value="" id="numeroTarjeta">
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<label for="mes">Mes</label><br>
+									<input type="text" value="" id="mes">
+								</td>
+								<td>
+									<label for="ano">a&ntilde;o</label><br>
+									<input type="text" value="" id="ano">
+								</td>
+								<td>
+									<label>CVV</label><br>
+									<input type="text" value="" id="CVV">
+								</td>
+								<td>
+									<img alt="Tarjeta" src="../../multimedia/fotos/tarjeta.png" width="40">
+								</td>
+							</tr>
+							<tr>
+								<td colspan="4">
+									<label for="nombre">Titular de la Tarjeta</label><br>
+									<input type="text" value="" id="nombre">
+								</td>
+							</tr>
+							<tr>
+								<td colspan="4">
+									<input type="checkbox" name="guardarDatos" value="true" id="guardarDatos" checked><label for="guardarDatos">¿Guardar datos para futuras compras?</label>
+								</td>
+							</tr>	
+						</table>
+					</section>
+				<hr>
+					<section>
+						<h3>Pol&iacute;tica de Privacidad</h3>
+						<input type="checkbox" name="privacidad" value="true" checked><label> He leido y acepto la Pol&iacute;tica de Privacidad*</label><br>
+						<p>
+							Autorizaci&oacute;n al env&iacute;o de comunicaciones electr&oacute;nicas informativas relativas a las actividades, productos o servicios por correo postal, fax, correo electr&oacute;nico o cualquier otro medio electr&oacute;nico equivalente*
+						</p>
+						<select name="envioComuni">
+							<option value="">Selecione una opci&oacute;n</option>
+							<option value="SI">SI autorizo el env&iacute;o de comunicaciones</option>
+							<option value="NO">NO autorizo el env&iacute;o de comunicaciones</option>
+						</select><br>
+						<input type="submit" value="enviar">
+					</section>
+				<hr>
+				</form>
+			</section>
+		</article>	
+	</main>
+	<footer>
+		<p>
+			<a href="https://www.google.es/maps/place/Scan+Computers/@53.5840775,-2.542883,17z/data=!3m1!4b1!4m5!3m4!1s0x487b0900e77e7fc1:0xad52aa513be7cb1d!8m2!3d53.5840775!4d-2.5406943?hl=es-419" title="Encuentranos">Encuentranos:</a> Enterprise Park, Middlebrook, Bolton, UK
+		</p>
+		<p>
+			Tel&eacute;fono de contacto: +34 666 666 666
+		</p>
+		<p>
+			<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><a href="http://users.skynet.be/mgueury/mozilla/"><img src="http://users.skynet.be/mgueury/mozilla/tidy_32.gif" alt="Validated by HTML Validator (based on Tidy) " height="32" width="78"/></a><br />Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Licencia Creative Commons Atribución-NoComercial-SinDerivadas 4.0 Internacional</a>.
+		</p>
+	</footer>
+</body>
+</html>
