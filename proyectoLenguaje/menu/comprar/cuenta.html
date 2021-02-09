@@ -34,24 +34,29 @@
 			</ul>
 			</nav>
 		</header>
-	<section>
-		<article>
-			<header>
+	<section id="cuenta">
+		<div class="cajaCuenta">
+			<section id="cuadroRegistro">
+				<div id="tituloCuenta">
 				<h1>Cuenta</h1>
-			</header>
-			<section>
-				<h2>¿Ya est&aacute;s registrado?</h2>
-				<form action="entrega.html" method="post"><br>
-					<strong>Direcci&oacute;n de correo electr&oacute;nico</strong><br>
-					<input type="email" name="email"><br>
-					<strong>Contrase&ntilde;a*</strong><br>
-					<input type="password" name="password"><br>
-					¿Olvid&oacute; su contrase&ntilde;a?<br>
-					<input type="submit" value="Iniciar sesi&oacute;n">
+				</div>
+				<div id="registro">
+				<h2 id="refistradoYa">¿Ya est&aacute;s registrado?</h2>
+				<form action="entrega.html" method="post" id="formulario">
+					<p>Direcci&oacute;n de correo electr&oacute;nico</p>
+					<input type="email" name="email" class="cuadro">
+					<p>Contrase&ntilde;a*</p>
+					<input type="password" name="password" class="cuadro">
+					¿Olvid&oacute; su contrase&ntilde;a?
+					<div id="iniciarSesion">
+					<input type="submit" value="Iniciar sesi&oacute;n" id="bIniciar">
+					</div>
 				</form>
-			</section>
-		</article>
+				</div>
+			</section>	
+		</div>
 	</section>
+
 	<footer>
 		<div class="mapa">
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2368.5258977605963!2d-2.5428829841525675!3d53.584077480029514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b0900e77e7fc1%3A0xad52aa513be7cb1d!2sScan%20Computers!5e0!3m2!1ses-419!2ses!4v1612729333154!5m2!1ses-419!2ses" width="auto" height="auto" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" id="mapa"></iframe>
