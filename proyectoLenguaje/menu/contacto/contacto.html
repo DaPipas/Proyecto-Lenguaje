@@ -35,27 +35,41 @@
 		</nav>
 	</header>
 	<section>
-		<article id="formulario">
-			<header>
+		<div id="formulario">
 				<h1>Contacta con Nosotros</h1>
-			</header>
-			<p>
+			<p id="txtContacto">
 				Si desea contactar con nosotros s&oacute;lo tiene que rellenar el siguiente formulario de contacto. Recuerde que los campos marcados con un * son obligatorios.
 			</p>
-			<form action="contacto.html" method="post">
-				<label for="nombre">Nombre*</label><br>
-				<input type="text" name="nombre" value="" id="nombre"><br>
-				<label for="empresa">Empresa</label><br>
-				<input type="text" name="empresa" value="" id="empresa"><br>
-				<label for="telefono">Tel&eacute;fono</label><br>
-				<input type="text" name="telefono" value="" size="9" id="telefono"><br>
-				<label for="email">Email*</label><br>
-				<input type="email" name="email" id="email"><br>
-				<label for="texto"> Comenentario*</label><br>
-				<textarea cols="50" id="texto"></textarea><br>
-				<input type="submit" value="Enviar">
-			</form>
-		</article>
+			<div id="formularioContacto">
+				<form action="contacto.html" method="post" >
+					<div id="datos">
+						<div class="bloque">
+							<label for="nombre" class="txtInfo">Nombre*</label>
+							<input type="text" name="nombre" value="" id="nombre" class="cuadro">
+						</div>
+						<div class="bloque">
+						<label for="empresa" class="txtInfo">Empresa</label>
+						<input type="text" name="empresa" value="" id="empresa" class="cuadro">
+					 	</div>
+					 	<div class="bloque">
+						<label for="telefono" class="txtInfo">Tel&eacute;fono</label>
+						<input type="text" name="telefono" value="" size="9" id="telefono" class="cuadro">
+						</div>
+						<div class="bloque">
+						<label for="email" class="txtInfo">Email*</label>
+						<input type="email" name="email" id="email" class="cuadro">
+						</div>
+					</div>
+					<div id="comentario">
+						<label for="texto" class="txtInfo"> Comenentario*</label><br>
+						<textarea cols="50" id="texto"></textarea>
+						<div id="enviar">
+							<input type="submit" value="Enviar" id="bEnviar">
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
 	</section>
 	<footer>
 		<div class="mapa">
