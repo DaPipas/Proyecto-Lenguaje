@@ -91,14 +91,14 @@ nav ul li a{
 	text-decoration: none;
 	color: white;
 	font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	text-shadow: 2px 4px 8px black;
+	text-shadow: 2px 2px 2px rgb(0,0,0, 0.7);
 }
 
 nav ul li a:hover{
 	text-decoration: none;
 	color: rgb(235, 141, 34);
 	font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	text-shadow: 2px 4px 8px white;
+	text-shadow: 2px 2px 2px white;
 }
 
 
@@ -109,17 +109,23 @@ nav ul li a:hover{
 	font-size: 3em;
 	font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 	font-variant: small-caps;
-	text-shadow: 2px 4px 8px white;
-	color:rgb(235, 141, 34);
+	text-shadow: 2px 4px 8px rgb(235, 141, 34);
+	color:white;
+	animation-direction:alternate;
+	animation-delay: 1s;
+	animation-duration: 2s;
+	animation-iteration-count: 10;
+	animation-name: moveUp;
 }
 
 
 #video_pattern{
-	margin: 0;
+	margin: 0 2em;
 	height: auto;
 	width: auto;
 	max-width: 100%;
 	min-width: 1165px;
+	
 }
 
 #video{
@@ -128,6 +134,9 @@ nav ul li a:hover{
 	top: 0;
 	left: 0;
 	min-width: 1165px;
+	border-radius: 30px;
+	margin: 2em auto;
+	box-shadow: 2px 2px 2px 1px rgb(0,0,0, 0.2);
 }
 
 .video{
@@ -206,6 +215,7 @@ footer #licencia a{
 	width: 100%;
 	height: 100%;
 	border-radius: 20px;
+	box-shadow: 2px 2px 2px 1px rgb(0,0,0, 0.2);
 }
 
 p{
@@ -230,12 +240,17 @@ h1, h2{
 	width: 35%;
 	margin-right: 2em;
 	border-radius: 20px;
+	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+	animation-duration: 1s;
+	animation-direction: reverse;
+	animation-name: moveRight;
 }
 
 #txtInfo{
 	width: 50%;
 	height: 100%;
 	float:left;
+	
 }
 
 #productos{
@@ -243,6 +258,14 @@ h1, h2{
 	margin: 0;
 	padding: 0;
 	width: 100%;
+	color: white;
+	
+	font-family: DejaVu Sans Mono, monospace;
+}
+
+#productos a{
+	color:rgb(235, 141, 34);
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);;
 }
 
 #encabezado{
@@ -260,14 +283,48 @@ h1, h2{
 	margin: 0;
 }
 
+.marca{
+	width: 25%;
+}
+
+.foto{
+	width: 40%;
+	float:left
+	
+}
+
+.infoGeneral h4{
+	margin: 1em;
+}
+
+.codProd{
+	float:left
+	width: 40%;
+	margin: 15% 0;
+	
+}
+
+.bFicha{
+	background-color: white;
+	float: left;
+	margin: 2%;
+	padding:1% 2%;
+	border-radius: 10px;
+}
+
 section{
 	float:left;
 	width: 100%;
 }
 .producto{
 	float: left;
-	width: 100%;
-	margin: 0;
+	width: 45%;
+	margin: 1% 25%;
+	padding: 3% 2% .7% 2%;
+	border: 2px solid white;
+	border-radius: 20px;
+	height: 100%;
+	
 }
 .producto h2{
 	
@@ -281,16 +338,90 @@ section{
 	width: 100%;
 }
 
+.caracteristicas{
+	width: 50%;
+	margin: 1% 0 1% 5%;
+}
+
+.tituloCategoria{
+	background-color: rgb(255,255,255, 0.9);
+	color:rgb(235, 141, 34);
+	border-radius: 10px;
+}
+
+.tituloCategoria h2{
+	text-shadow: 2px 2px 1px rgb(0,0,0, 0.5);
+	color:rgb(235, 141, 34);
+	font-size: 2em;
+	text-align: center;
+	margin:0;
+}
+
 .marca{
 	
 	width: 90%;
 	display: block;
 }
 
+.infoGeneral img{
+	border-radius: 10px;
+}
+
 .infoGeneral{
 	margin: 0;
 }
 
+.ud{
+	background-color: white;
+	color:rgb(235, 141, 34);
+	border-radius: 20px;
+	padding: 3% 4%;
+	margin: 1em 0;
+}
+
+.ud p{
+	color:rgb(235, 141, 34);
+}
+
+.carritoCompra{
+	width: 100%;
+	float:left;
+	margin-left: 2em;
+}
+
+.div1{
+	width: 30%;
+	float:left;
+	border-right: 2px solid white;
+	padding-right: 2%;
+	margin-right: 2%;
+}
+
+.carritoCompra p{
+	width: 30%;
+	float: left;
+}
+
+.carritoCompra h4{
+	margin-bottom: .5em;
+}
+
+.carritoCompra img{
+	margin-left: 12%;
+	border-radius: 3px;
+}
+
+.Comprar{
+	width: 30%;
+	float: left;
+}
+#monitor{
+	padding-bottom: 1.4%;
+}
+
+#PC{
+	padding-bottom: 1.4%;
+}
 /*cuenta*//
 
 .cajaCuenta{
@@ -349,23 +480,21 @@ section{
 	margin-bottom: 5%;
 }
 #cuadroRegistro{
-	margin-left: 32%;
-	margin-top: 20%;
-	margin-bottom: 17%;
+	margin: 20% 35%;
 	width: 32%;
-	border: 5px dashed white;
+	border: 5px solid white;
 	border-radius: 20px;
 	text-shadow:  2px 4px 8px black;
+	box-shadow: 4px 4px 4px 2px rgb(0,0,0, 0.2);
 }
 
 
 
 #formulario{
-	margin: 5% 5% 8% 5%;
+	margin: 5% 5% 10% 5%;
 	padding: 5% 5% 0 5%;
 	font-family: DejaVu Sans Mono, monospace;
-	border: 5px dashed white;
-	border-radius: 20px;
+	
 	color: white
 }
 
@@ -377,18 +506,26 @@ section{
 	width: 90%;
 }
 
-#iniciarSesion{
-	margin-top: 10%;
-	margin-left:10%;
 
-}
 #bIniciar{
+	height: 10%;
 	padding: 7% 20%;
 	border-radius: 20px;
 	background: white;
 	font-family: Tahoma, Arial, Verdana, sans-serif;
 	font-size: 1.5em;
+	margin-top: 2em;
 }
+
+#bIniciar:hover{
+	padding: 7% 20%;
+	border-radius: 20px;
+	background: rgb(235, 141, 34);
+	font-family: Tahoma, Arial, Verdana, sans-serif;
+	font-size: 1.5em;
+	color:white;
+}
+
 
 #formulario h1{
 	font-size: 4em;
@@ -410,6 +547,12 @@ section{
 
 .txtInfo{
 	margin-left: 5%;
+	animation-duration: 1s;
+	animation-direction: reverse;
+	animation-name: moveRight;
+}
+.txtInfo h1{
+	margin:1em 0 1em 5%;
 }
 
 .bloque{
@@ -439,4 +582,193 @@ section{
 	padding: 1em 0;
 	font-family: Tahoma, Arial, Verdana, sans-serif;
 	border-radius: 20px;
+}
+
+#bEnviar:hover{
+	width: 100%;
+	height: 50%;
+	padding: 1em 0;
+	font-family: Tahoma, Arial, Verdana, sans-serif;
+	border-radius: 20px;
+	background: rgb(235, 141, 34);
+	color:white;
+}
+
+#comprado{
+	float:left;
+	width: 90%;
+	height: 100%;
+	margin: 4em 0 15% 4em;
+	padding-bottom: 1em;
+}
+
+#exito{
+	padding-bottom: 1em;
+	text-shadow: 2px 2px 2px rgb(0,0,0, 0.7);
+}
+
+#comprado p a{
+	color:rgb(235, 141, 34);
+}
+
+#coche{
+	animation-direction:normal;
+	animation-delay: 1s;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-name: moveRight;
+	width: 60%;
+}
+
+@keyframes moveRight{
+	from{
+		transform: translateX(0);
+	}
+	to{
+		transform: translateX(50%);
+	}
+}
+
+@keyframes moveUp{
+	from{
+		transform: translateY(0);
+	}
+	to{
+		transform: translateY(50%);
+	}
+}
+
+
+#tx1{
+	animation-direction:normal;
+	animation-delay: 1s;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-name: moveUp;
+}
+
+/* validar compra*/
+
+#boxCompra{
+	float:left;
+	margin-left: 4.5%;
+	width: 90%;
+	height: 100%;
+	text-align:center;
+}
+
+
+#boxCompra h1{
+	margin: .5em 0;
+	text-shadow: 2px 2px 2px rgb(0,0,0, 0.5);
+}
+
+#formularioCompra{
+	margin: 2% 0 2% 0;
+	text-align:left;
+}
+
+#formularioCompra h2{
+	margin: 2% 0 2% 0;
+	text-shadow: 2px 2px 2px rgb(0,0,0, 0.5);
+	border-bottom: 2px solid white;
+	padding-bottom: .5em;
+}
+
+.apartado{
+	border: 2px solid white;
+	border-radius: 20px;
+	margin-bottom: .5em;
+	padding: 2% 0 2% 2%;
+	box-shadow: 2px 2px 2px 1px rgb(0,0,0, 0.2);
+	font-family: Tahoma, Arial, Verdana, sans-serif;
+	color:white;
+}
+
+.apartado h3{
+	text-shadow: 2px 2px 2px rgb(0,0,0, 0.5);
+	margin-bottom: .5em;
+}
+
+.dato{
+	margin-left: 1em;
+	margin-top: .5em;
+	border-radius: 20px;
+	padding: .2em 0 .2em .2em;
+}
+
+
+#bComprar{
+	width: 100%;
+	height: 50%;
+	padding: 1em 0;
+	font-family: Tahoma, Arial, Verdana, sans-serif;
+	border-radius: 20px;
+	font-size: 1.2em;
+}
+
+#bComprar:hover{
+	width: 100%;
+	height: 50%;
+	padding: 1em 0;
+	font-family: Tahoma, Arial, Verdana, sans-serif;
+	border-radius: 20px;
+	background: rgb(235, 141, 34);
+	color:white;
+	font-size: 1.2em;
+}
+
+#ntarjeta{
+	width: 32%;
+	float:left;
+	clear: right;
+}
+
+#numeroTarjeta{
+	width: 43%;
+}
+
+#masDatosTarjeta{
+	float: left;
+	clear:right;
+	width: 100%;
+	height: 100%;
+	margin-top: .5em;
+}
+
+.division{
+	width: 15%;
+	float:left;
+}
+
+.division img{
+	margin-top: 1.2em;
+	
+}
+
+#titular{
+	width: 100%;
+	float:left;
+	clear: right;
+}
+
+#nombre{
+	width: 47%;
+	margin-bottom: .5em;
+}
+
+#politicaPrivacidad p{
+	margin: .5em 0;
+}
+
+.gracias{
+	color white;
+	height: 100%;
+	padding: 22% 0;
+	text-align: center;
+	
+}
+
+#gracias{
+	font-size: 2em;
 }

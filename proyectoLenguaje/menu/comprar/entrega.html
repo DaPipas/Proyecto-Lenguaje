@@ -34,92 +34,82 @@
 		</ul>
 		</nav>
 	</header>
-	<secton>
-		<article>
-			<header>
+	<div id="boxCompra">
 				<h1>Validar compra</h1>
-			</header>
-			<section>
+			
+			<div id="formularioCompra" >
 				<h2>Formul&aacute;rio compra</h2>
 				<form action="compraCompletada.html" method="post">
-					<section>
+					<div id="formasPago" class="apartado">
 						<h3>Formas de entrega</h3>
 						<p>Seleccione una opci&oacute;n de env&iacute;o</p>
-						<input type="radio" name="entrega" value="casa" id="casa" checked><label for="casa"> Env&iacute;o a domic&iacute;lio</label><br>
-						<input type="radio" name="entrega" value="tienda" id="tienda"><label for="tienda"> Recogida en tienda</label>
-					</section>
-				<hr>
-					<section>
+						<input type="radio" name="entrega" value="casa" id="casa" checked class="dato"><label for="casa"> Env&iacute;o a domic&iacute;lio</label><br>
+						<input type="radio" name="entrega" value="tienda" id="tienda" class="dato"><label for="tienda"> Recogida en tienda</label>
+					</div>
+				
+					<div id="elegirProducto" class="apartado">
 						<h3>Carrito</h3>
-						<label for="producto">Selecciona un producto</label><br>
-						<select name="producto" id="producto">
+						<label for="producto" class="lb">Selecciona un producto</label><br>
+						<select name="producto" id="producto" class="dato" >
 							<option value="articulo1">Monitor AOC</option>
 							<option value="articulo2">Apple iMac</option>
 							<option value="articulo3">Ideapad Lenovo</option>
 							<option value="articulo4">MI TVI A4</option>
 						</select><br>
-						<label for="cantidad">Seleccione Unidades:</label><br>
-						<input type="text" value="" id="cantidad">
-					</section>
-				<hr>
-					<section>
+						<label for="cantidad" class="lb">Seleccione Unidades:</label><br>
+						<input type="text" value="" id="cantidad" class="dato" >
+					</div>
+				
+					<div id="metodoPago" class="apartado">
 						<h3>M&eacute;todo de Pago</h3>
-						<table id="pago">
-							<tr>
-								<td colspan="4">
+							<div id="nTarjeta">
 									<label for="numeroTarjeta">N&uacute;mero de tarjeta:</label><br>
-									<input type="text" value="" id="numeroTarjeta">
-								</td>
-							</tr>
-							<tr>
-								<td>
+									<input type="text" value="" id="numeroTarjeta" class="dato">
+							</div>
+							<div id="masDatosTarjeta">
+								<div class="division">
 									<label for="mes">Mes</label><br>
-									<input type="text" value="" id="mes">
-								</td>
-								<td>
-									<label for="ano">a&ntilde;o</label><br>
-									<input type="text" value="" id="ano">
-								</td>
-								<td>
+									<input type="text" value="" id="mes" class="dato">
+								</div>
+								<div class="division">
+									<label for="ano" >A&ntilde;o</label><br>
+									<input type="text" value="" id="ano" class="dato">
+								</div>
+								<div class="division">
 									<label>CVV</label><br>
-									<input type="text" value="" id="CVV">
-								</td>
-								<td>
+									<input type="text" value="" id="CVV" class="dato">
+								</div>
+								<div class="division">
 									<img alt="Tarjeta" src="../../multimedia/fotos/tarjeta.png" width="40">
-								</td>
-							</tr>
-							<tr>
-								<td colspan="4">
+								</div>
+							</div>
+							<div id="titular">
 									<label for="nombre">Titular de la Tarjeta</label><br>
-									<input type="text" value="" id="nombre">
-								</td>
-							</tr>
-							<tr>
-								<td colspan="4">
+									<input type="text" value="" id="nombre" class="dato">
+							</div>
+							<div id="cb">
 									<input type="checkbox" name="guardarDatos" value="true" id="guardarDatos" checked><label for="guardarDatos">¿Guardar datos para futuras compras?</label>
-								</td>
-							</tr>	
-						</table>
-					</section>
-				<hr>
-					<section>
+							</div>
+							</div>
+				
+					<div id="politicaPrivacidad" class="apartado">
 						<h3>Pol&iacute;tica de Privacidad</h3>
 						<input type="checkbox" name="privacidad" value="true" checked><label> He leido y acepto la Pol&iacute;tica de Privacidad*</label><br>
 						<p>
 							Autorizaci&oacute;n al env&iacute;o de comunicaciones electr&oacute;nicas informativas relativas a las actividades, productos o servicios por correo postal, fax, correo electr&oacute;nico o cualquier otro medio electr&oacute;nico equivalente*
 						</p>
-						<select name="envioComuni">
+						<select name="envioComuni" class="dato">
 							<option value="">Selecione una opci&oacute;n</option>
 							<option value="SI">SI autorizo el env&iacute;o de comunicaciones</option>
 							<option value="NO">NO autorizo el env&iacute;o de comunicaciones</option>
 						</select><br>
-						<input type="submit" value="enviar">
-					</section>
-				<hr>
+					</div>
+						<input type="submit" value="Comprar" id="bComprar">
+					
+				
 				</form>
 			</section>
-		</article>	
-	</section>
+	</div>
 	<footer>
 		<div class="mapa">
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2368.5258977605963!2d-2.5428829841525675!3d53.584077480029514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b0900e77e7fc1%3A0xad52aa513be7cb1d!2sScan%20Computers!5e0!3m2!1ses-419!2ses!4v1612729333154!5m2!1ses-419!2ses" width="auto" height="auto" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" id="mapa"></iframe>

@@ -41,10 +41,10 @@
 				Si desea contactar con nosotros s&oacute;lo tiene que rellenar el siguiente formulario de contacto. Recuerde que los campos marcados con un * son obligatorios.
 			</p>
 			<div id="formularioContacto">
-				<form action="contacto.html" method="post" >
+				<form action="./comentarioEnviado.html" method="post" >
 					<div id="datos">
 						<div class="bloque">
-							<label for="nombre" class="txtInfo">Nombre*</label>
+							<label for="nombre" class="txtInfo">Nombre*</label><br>
 							<input type="text" name="nombre" value="" id="nombre" class="cuadro">
 						</div>
 						<div class="bloque">
@@ -64,7 +64,7 @@
 						<label for="texto" class="txtInfo"> Comenentario*</label><br>
 						<textarea cols="50" id="texto"></textarea>
 						<div id="enviar">
-							<input type="submit" value="Enviar" id="bEnviar">
+							<input type="submit" value="Enviar" id="bEnviar" class="boton">
 						</div>
 					</div>
 				</form>
